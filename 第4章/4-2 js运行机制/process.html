@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=`, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>js运行机制</title>
+</head>
+
+<body>
+  <script>
+    // 题目1:
+    // console.log(1);
+    // // setTimeout和setInterval是异步任务
+    // setTimeout(function () {
+    //   console.log(2);
+    // }, 0)
+    // console.log(3);
+    // console.log(4);
+
+    // 题目2
+    // console.log("A");
+    // while (true) {
+
+    // }
+    // console.log("B");
+
+    // 题目3：
+    for (var i = 0; i < 4; i++) {
+      setTimeout(function() {
+        console.log(i);
+      }, 1000);      
+    }
+  </script>
+</body>
+
+</html>
